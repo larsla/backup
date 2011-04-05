@@ -1,0 +1,12 @@
+ 
+ Written by Lars Larsson <lars.la@gmail.com>
+
+
+First make the directory /etc/backup
+Then copy the files in this directory to /etc/backup
+
+Edit /etc/backup/backup.conf and edit the options there
+
+To run backup every night at 00:00, put this line in /etc/crontab:
+0 0 * * * root bash /etc/backup/backup.sh 1>/tmp/backup.log 2>&1
+
