@@ -17,7 +17,7 @@ date_default_timezone_set('Europe/Stockholm');
 $error_mail="TRUE";
 
 # Address to send the errorlog to if a client sends in an error-log
-$mailto="lars.larsson2@varmdo.se";
+$mailto="you@yourdomain.com";
 
 # SMTP-server
 $smtp_server="smtp.varmdo.se";
