@@ -20,13 +20,13 @@ $error_mail="TRUE";
 $mailto="you@yourdomain.com";
 
 # SMTP-server
-$smtp_server="smtp.varmdo.se";
+$smtp_server="smtp.yourdomain.com";
 
 # Name of sending user
 $from_name="Backup";
 
 # Mail from address
-$from_mail="backup@varmdo.se";
+$from_mail="backup@yourdomain.com";
 
 ## </CONFIG>
 
