@@ -1,0 +1,6 @@
+
+A simple backup system written in bash and php and uses tar and curl.
+
+Written by Lars Larsson, lars.la@gmail.com
+
+Check the INSTALL files under the server and client folders
