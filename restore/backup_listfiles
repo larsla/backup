@@ -15,6 +15,11 @@ if [ -a /tmp/restore-$DATE.tar ]; then
 	exit
 fi
 
+if [ ! -f $1-1.tar ]; then
+	echo "ERROR: no such file: $1-1.tar, maybe you didn't give me the correct base name?"
+	exit
+fi
+
 export TAR_BASE_VOL=$1
 
 
