@@ -1,6 +1,8 @@
 
 A simple backup system written in bash and php and uses tar and curl.
 
-Written by Lars Larsson, lars.la@gmail.com
+Written by Lars Larsson, lars@lars.la
 
 Check the INSTALL files under the server and client folders
+
+The restore-script has an automated install, check the folder restore.

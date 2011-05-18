@@ -1,0 +1,24 @@
+#!/bin/bash
+# 
+# Written by Lars Larsson <lars@lars.la>
+#
+
+if [ ! $1 ]; then
+	echo "Usage: $0 <base name of tar archive> <file containing a list of files to restore>"
+	exit
+fi
+
+DATE=$(date +%s)
+
+if [ -a /tmp/restore-$DATE.tar ]; then
+	echo "ERROR: Looks like there is another restore-job running at the same time, exiting."
+	exit
+fi
+
+export TAR_BASE_VOL=$1
+
+
+ln -s $1-1.tar /tmp/restore-$DATE.tar
+tar --files-from=$2 -M -F /usr/local/share/backup/switchtape.sh -xvf /tmp/restore-$DATE.tar
+
+rm /tmp/restore-$DATE.tar

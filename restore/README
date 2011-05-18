@@ -1,0 +1,8 @@
+This is the scripts to restore files from a backup taken with this system.
+
+To install the restore-scripts, run: sudo ./install.sh
+
+Then you can list files in a backup by running: backup_listfiles /var/backup/backup-hostname-2011-05-18-1305749141
+Pick the files or folders you want to restore and write them in a file, for example: echo "home/user/important/" >files.list
+Then you can restore these files with the command: backup_restore /var/backup/backup-hostname-2011-05-18-1305749141 files.list
+Now you have this folder structure in your current directory which you can rsync to the appropriate system.
